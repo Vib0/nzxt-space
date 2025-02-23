@@ -24,9 +24,9 @@ export default {
   },
   template: `
     <Space class="absolute" />
-    <div class="p-15 flex flex-col items-center justify-center min-h-screen gap-10">
+    <div class="p-15 flex flex-col items-center justify-center min-h-screen gap-5">
       
-      <div class="flex flex-row gap-10">
+      <div class="flex flex-row gap-5">
         <Infographic class="flex-1" kind="cpu" :monitoringData="monitoringData"/>
         <Infographic class="flex-1" kind="ram" :monitoringData="monitoringData"/>
       </div>

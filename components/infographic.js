@@ -41,7 +41,7 @@ export default {
     temp() { return Math.round(this.instance.temperature); },
   },
   template: `
-    <div class="text-2xl flex flex-col bg-white/5 backdrop-blur-sm rounded-lg p-4">
+    <div class="text-2xl flex flex-col bg-white/5 backdrop-blur-sm rounded-lg gap-1 p-4">
       <div class="flex flex-row gap-2">
         <i :class="['text-4xl', 'bi', kind === 'cpu' ? 'bi-cpu' : kind === 'gpu' ? 'bi-gpu-card' : 'bi-memory']"></i>
         <p class="text-3xl font-bold">{{name}}</p>
