@@ -22,7 +22,7 @@ export default {
           const [mainGpu] = gpus.filter(gpu => !gpu.name.includes('Graphics') && !gpu.name.includes('Display'));
           return mainGpu;
         } else {
-          return gpus.pop();
+          return gpus[0];
         }
       } 
       else if (this.kind === "ram") {
